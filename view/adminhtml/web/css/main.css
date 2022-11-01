@@ -1,0 +1,51 @@
+/**
+ * Equaltrue (shuvoenr@gmail.com)
+ *
+ * This source file is subject to the Equaltrue license
+ *
+ * @category  Core
+ * @package   Equaltrue_Core
+ * @copyright Copyright (c) Equaltrue (https://equaltrue.com)
+ * @author    Suvankar Paul
+ */
+
+@font-face {
+    font-family: 'equaltrue-admin';
+    src:url("../fonts/equaltrue-admin/fonts/equaltrue-admin.eot");
+    src:url("../fonts/equaltrue-admin/fonts/equaltrue-admin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/equaltrue-admin/fonts/equaltrue-admin.woff") format("woff"),
+        url("../fonts/equaltrue-admin/fonts/equaltrue-admin.ttf") format("truetype"),
+        url("../fonts/equaltrue-admin/fonts/equaltrue-admin.svg#equaltrue-admin") format("svg");
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+}
+
+/*-- Equaltrue Menu Icons --*/
+.admin__menu #menu-equaltrue-core-core>a:before {
+    font-family: 'equaltrue-admin', sans-serif;
+    content: "\61";
+    font-size: 2.4rem;
+    position: relative;
+    top: -0.2rem;
+    speak: none;
+    line-height: 1;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*-- Equaltrue Tab Icon --*/
+.config-nav-block.equaltrue strong:before {
+    font-family: 'equaltrue-admin', sans-serif;
+    content: "\61";
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px;
+    speak: none;
+    line-height: 1;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 7px;
+}

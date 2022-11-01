@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Equaltrue (shuvoenr@gmail.com)
+ *
+ * This source file is subject to the Equaltrue license
+ *
+ * @category  Core
+ * @package   Equaltrue_Core
+ * @copyright Copyright (c) Equaltrue (https://equaltrue.com)
+ * @author    Suvankar Paul
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="equaltrue" translate="label" sortOrder="400" class="equaltrue">
+            <label>Equaltrue</label>
+        </tab>
+
+        <!-- Equaltrue Documentation Tab -->
+        <section id="equaltrue_documentation" translate="label" type="text" sortOrder="290" showInDefault="1">
+            <class>separator-top</class>
+            <label>Documentation</label>
+            <tab>equaltrue</tab>
+            <resource>Equaltrue_Core::documentation</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1">
+                <label>Equaltrue Documentation</label>
+                <field id="documentation_doc" translate="label comment" showInDefault="1">
+                    <frontend_model>Equaltrue\Core\Block\System\Config\Fieldset\Hint\Documentation</frontend_model>
+                </field>
+            </group>
+        </section>
+
+        <!-- Equaltrue About Tab -->
+        <section id="equaltrue_about" translate="label" type="text" sortOrder="300" showInDefault="1">
+            <class>separator-top</class>
+            <label>About</label>
+            <tab>equaltrue</tab>
+            <resource>Equaltrue_Core::about</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1">
+                <label>Equaltrue About</label>
+                <field id="documentation_doc" translate="label comment" showInDefault="1">
+                    <frontend_model>Equaltrue\Core\Block\System\Config\Fieldset\Hint\About</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

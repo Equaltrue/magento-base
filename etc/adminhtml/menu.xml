@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Equaltrue (shuvoenr@gmail.com)
+ *
+ * This source file is subject to the Equaltrue license
+ *
+ * @category  Core
+ * @package   Equaltrue_Core
+ * @copyright Copyright (c) Equaltrue (https://equaltrue.com)
+ * @author    Suvankar Paul
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Equaltrue_Core::core" title="Equaltrue" translate="title" module="Equaltrue_Core" resource="Equaltrue_Core::core" sortOrder="50"/>
+        <add id="Equaltrue_Core::documentation" title="Documentation" translate="title" module="Equaltrue_Core" resource="Equaltrue_Core::documentation" parent="Equaltrue_Core::core" action="adminhtml/system_config/edit/section/equaltrue_documentation" sortOrder="1000"/>
+        <add id="Equaltrue_Core::about" title="About" translate="title" module="Equaltrue_Core" resource="Equaltrue_Core::about" parent="Equaltrue_Core::core" action="adminhtml/system_config/edit/section/equaltrue_about" sortOrder="1010"/>
+    </menu>
+</config>

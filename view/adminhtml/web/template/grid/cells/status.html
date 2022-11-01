@@ -1,0 +1,24 @@
+<!--
+/**
+ * Equaltrue (shuvoenr@gmail.com)
+ *
+ * This source file is subject to the Equaltrue license
+ *
+ * @category  Core
+ * @package   Equaltrue_Core
+ * @copyright Copyright (c) Equaltrue (https://equaltrue.com)
+ * @author    Suvankar Paul
+ */
+-->
+<div class="data-grid-cell-content">
+    <span data-bind="if: $col.getIsActive($row())">
+        <span class="grid-severity-notice">
+            <span data-bind="html: $col.getLabel($row())"></span>
+        </span>
+    </span>
+    <span data-bind="ifnot: $col.getIsActive($row())">
+        <span class="grid-severity-major">
+            <span data-bind="html: $col.getLabel($row())"></span>
+        </span>
+    </span>
+</div>
